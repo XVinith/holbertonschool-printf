@@ -6,6 +6,6 @@
 
 int _printf(const char *format, ...);
 int _putchar(char c);
-int var_detect(char *c);
+int var_detect(char c);
 
 #endif
