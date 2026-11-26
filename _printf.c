@@ -14,7 +14,10 @@ int _printf(const char *format, ...)
 	va_start(argc, format);
 
 	for (i = 0; format[i] != '\0'; i++)
-		_putchar(format[i]);
+	{
+		// _putchar(format[i]);
+		var_detect(format[i]);
+	}
 
 	return (0);
 }
