@@ -7,8 +7,8 @@ int var_detect(char c)
 
 	for (i = 0; ident[i]; i++)
 	{
-		if (ident[i] == "%")
-			switch (*ident)
+		if (ident[i] == c)
+			switch (ident[i])
 			{
 			case 'd':
 				/* code */
