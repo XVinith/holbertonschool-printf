@@ -8,8 +8,7 @@
 
 int decimal_detect(va_list take, int counter)
 {
-	int n;
-	int i; // le 
+	int n, i;
 	int divizoruss = 10; // le diviseur et le modulo
 	int zoro = 1; // nombre de chiffre
 	
