@@ -2,7 +2,7 @@
 
 int main(void)
 {
-	_printf("Bonjours %d ceci est un test : %a %e %i %o %u %x", 7); // on test ici
+	_printf("Bonjours %d ceci est un test : %a %e %i %o %u %x", -746468); // on test ici
 	/*
 	resultat attendu :
 						Bonjours (x) ceci est un test : %a %e (x) %o (x) (x)

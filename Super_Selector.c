@@ -9,16 +9,35 @@
 int decimal_detect(va_list take, int counter)
 {
 	int n;
-	int i; // le 
-	int divizoruss = 10; // le diviseur et le modulo
+	int i; // l'incrémenteur
+	int divizoruss; // le diviseur et le modulo
 	int zoro = 1; // nombre de chiffre
 	
 	n = va_arg(take, int);
-	for (i = 0; i < zoro; i++)
+	if (n < 0)
 	{
-		_putchar('0' + n / divizoruss);
+		_putchar('-');
+		n = -n;
 	}
-
+	
+	if (n > 9)
+	{
+	for ( divizoruss = 1; n / divizoruss >= 10; divizoruss *= 10)
+	{
+		zoro++;
+	}
+	
+		for (i = 0; i < zoro; i++)
+		{
+			_putchar('0' + n / divizoruss);
+			n = n % divizoruss;
+			divizoruss /= 10;
+		}
+	}
+	else
+	{
+		_putchar('0' + n);
+	}
 
 	return (counter);
 }
